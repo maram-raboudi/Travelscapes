@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
             // Placeholder: Send to backend (you can replace with actual fetch call)
             console.log(`Favorite toggled for: ${placeName}`);
             // Example for later backend:
-            // fetch('favorites.php', {
-            //     method: 'POST',
-            //     headers: {'Content-Type': 'application/json'},
-            //     body: JSON.stringify({ place: placeName })
-            // });
+             fetch('favorites.php', {
+                 method: 'POST',
+                 headers: {'Content-Type': 'application/json'},
+                 body: JSON.stringify({ place: placeName })
+             });
         });
     });
 });
