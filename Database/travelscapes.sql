@@ -1,27 +1,6 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Oct 19, 2023 at 10:13 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `travelscapes`
---
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `admin_login`
@@ -39,9 +18,7 @@ CREATE TABLE `admin_login` (
 
 INSERT INTO `admin_login` (`srno`, `Admin_Name`, `Admin_Password`) VALUES
 (1, 'Admin', 'Admin'),
-(2, 'Tejas', 'Tejas'),
-(3,  'atharva', 'atharva'),
-(4, 'yash' ,  'Yash');
+(2, 'Admin1', 'Admin1'),
 
 -- --------------------------------------------------------
 
@@ -63,15 +40,8 @@ CREATE TABLE `cities` (
 --
 
 INSERT INTO `cities` (`cityid`, `city`, `region`, `season`, `days`, `cost`) VALUES
-(1, 'Chennai', 'South', 'Winter', 3, 30000),
-(2, 'Ladakh', 'North', 'Summer', 7, 50000),
-(3, 'Manali', 'North', 'Monsoon', 5, 35000),
-(4, 'Mumbai', 'West', 'Winter', 3, 15000),
-(5, 'Pune', 'West', 'Winter', 3, 15000),
-(6, 'Rajasthan', 'North-West', 'Winter', 7, 40000),
-(7, 'Goa', 'West', 'Summer', 3, 15000),
-(8, 'Kerala', 'South', 'Monsoon', 5, 21000),
-(9, 'Sikkim', 'North-East', 'Winter', 7, 55000);
+(1, 'Tunisia', 'North', 'Winter', 3, 3000),
+(2, 'Dubai', 'Central', 'Summer', 7, 5000),
 
 -- --------------------------------------------------------
 
@@ -122,9 +92,8 @@ CREATE TABLE `login` (
 
 INSERT INTO `login` (`usersid`, `usersEmail`, `usersuid`, `userspwd`) VALUES
 (1, 'test@test.com', 'test', '$2y$10$flekLyq.6a/gn12Xsdm0v.SZZCrx3/.Pm3M3Ucvel8MwCzReorRsq'),
-(2, 'test2@test.com', 'test2', '$2y$10$uqx8Jk9IDXZ8q1x4JFPR5OYiaCKYTquxsXH6A0OM7hTXkpEKXzjJG'),
-(3, 'test3@test.com', 'test3', '$2y$10$OGLEA.ETOj1DB0fRhjjuduKb4OJ75.WB5wgs5UVUBPjTMbcoUVVgy'),
-(5, 'test4@test.com', 'test4', '$2y$10$ikw.LpmUCDlMTuK2qdUyNuueZOn2Zrqkg4WLEuUaqDFLYh4YjrIlC');
+(2, 'amira@test.com', 'amira', '$2y$10$uqx8Jk9IDXZ8q1x4JFPR5OYiaCKYTquxsXH6A0OM7hTXkpEKXzjJG'),
+
 
 --
 -- Indexes for dumped tables
@@ -194,6 +163,3 @@ ALTER TABLE `hotels`
   ADD CONSTRAINT `hotels_ibfk_1` FOREIGN KEY (`cityid`) REFERENCES `cities` (`cityid`) ON DELETE CASCADE;
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
