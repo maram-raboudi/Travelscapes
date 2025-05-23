@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success Page</title>
+    <link rel="shortcut icon" href="../images/download.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #78C7D4, #005273);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: zoomIn 0.7s ease;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .icon {
+            font-size: 80px;
+            color: #2ecc71;
+            margin-bottom: 20px;
+        }
+
+        .success-message {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .sub-text {
+            font-size: 16px;
+            color: #666;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <i class="icon fas fa-check-circle"></i>
+        <div class="success-message">Success! Your booking is confirmed.</div>
+        <div class="sub-text">You will receive a confirmation email shortly.</div>
+    </div>
+</body>
+</html>

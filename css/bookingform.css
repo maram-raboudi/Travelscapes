@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    background-color: #fff0f5; /* Soft pink background */
+    color: #e84393;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Headings */
+h2 {
+    color: #e84393;
+    margin-bottom: 20px;
+}
+
+/* Card Container Styles */
+.card-container {
+    background-color: #ffffff;
+    border: 1px solid #e84393;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    box-shadow: 0 8px 20px rgba(232, 67, 147, 0.2);
+}
+
+/* Booking details */
+.booking-details {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 12px;
+    border: 1px solid #e84393;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #ff6384;
+    box-shadow: 0 0 5px rgba(255, 99, 132, 0.3);
+    outline: none;
+}
+
+/* Cost Display Styles */
+p {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#calculatedCost {
+    color: #e84393;
+    font-size: 28px;
+}
+
+/* Button Styles */
+button {
+    background-color: #e84393;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6384;
+}
